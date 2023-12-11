@@ -1,0 +1,11 @@
+### Listar Aluno ###
+GET https://localhost:7223/api/aluno/listar
+
+### Criar Aluno ###
+POST https://localhost:7223/api/aluno/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Maria",
+    "nascimento": "10-04-1982"
+}

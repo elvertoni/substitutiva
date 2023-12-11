@@ -1,0 +1,22 @@
+### Listar IMC ###
+GET https://localhost:7223/api/imc/listar
+
+### Criar IMC ###
+POST https://localhost:7223/api/imc/cadastrar
+Content-Type: application/json
+
+{
+  "altura": 1.84,
+  "peso": 120,
+  "alunoId": 1
+}
+
+### Alterar IMC ###
+PUT https://localhost:7223/api/imc/alterar/1
+Content-Type: application/json
+
+{
+  "altura": 1.90,
+  "peso": 100,
+  "alunoId": 1
+}
