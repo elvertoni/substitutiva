@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>Data de Nascimento</th>
+    </tr>
+    <tr *ngFor="let aluno of alunos">
+        <td>{{aluno.alunoId}}</td>
+        <td>{{aluno.nome}}</td>
+        <td>{{aluno.nascimento}}</td>
+    </tr>
+</table>

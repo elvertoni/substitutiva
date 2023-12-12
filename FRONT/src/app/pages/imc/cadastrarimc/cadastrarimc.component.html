@@ -1,0 +1,16 @@
+<h2>Cadastrar IMC</h2>
+<div>
+  <label>Peso:</label>
+  <input [(ngModel)]="peso" />
+</div>
+<div>
+  <label>Altura:</label>
+  <input [(ngModel)]="altura" />
+</div>
+<div>
+  <label>Aluno:</label>
+  <select [(ngModel)]="alunoId">
+    <option *ngFor="let a of alunos" [value]="a.alunoId">{{ a.nome }}</option>
+  </select>
+</div>
+<div><button (click)="cadastrar()">Cadastrar</button></div>
